@@ -4,7 +4,7 @@ describe('Test addTokens function', () => {
     test('input should be a string', (done) => {
         expect(() => {
             app.addTokens(5)
-        }).toThrowError('Invalid input');
+        }).toThrowError('Input should be a string');
         done();
     });
     test('input should be at least 6 characters long', (done) => {
