@@ -1,7 +1,7 @@
 function addTokens(input, tokens){
-    
+    //At this validation in the todo it says that we should throw 'Input should be a string' but in the test is 'Invalid input'
     if (typeof input != 'string') {
-        throw new Error('Input should be a string')
+        throw new Error('Invalid input')
     }
     if (input.length < 6) {
         throw new Error('Input should have at least 6 characters')
